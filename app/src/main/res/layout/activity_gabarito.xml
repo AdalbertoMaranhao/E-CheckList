@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gabarito"
+            android:textStyle="bold"
+            android:textSize="40sp" android:baselineAligned="false"></TextView>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="1:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="2:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="3:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="4:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="5:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="6:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="7:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="8:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="9:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_weight="9"
+                  android:layout_height="wrap_content" android:text="10:"
+                  android:textSize="24sp" android:gravity="center" android:textStyle="bold"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textSize="24sp" android:padding="5dp"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textSize="24sp" android:padding="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+    >
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:id="@+id/btn_cancelar"
+        />
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:id="@+id/btn_salvar"
+        />
+    </LinearLayout>
+
+
+
+</LinearLayout>
