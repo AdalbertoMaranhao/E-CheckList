@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">E-CheckList</string>
+    <string name="baixar_gabarito">Baixar Gabarito</string>
+    <string name="preencher_gabarito">Preencher Gabarito</string>
+    <string name="capturar_gabarito">Capturar Gabarito</string>
 </resources>
