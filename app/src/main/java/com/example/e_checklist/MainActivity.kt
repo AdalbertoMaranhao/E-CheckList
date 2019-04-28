@@ -56,12 +56,17 @@ class MainActivity : AppCompatActivity() {
                 e.printStackTrace()
             }
             if (photoFile != null){
+
+                var photoUri = FileProvider.getUriForFile(this,
+                    "com.example.e_checklist.fileprovider", photoFile)
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
+
                 startActivityForResult(intent, TAKE_PICTURE)
             }
         }
     }
 
-    @SuppressLint("SimpleDateFormat")
+
     fun createImage(): File{
         val timestamp = SimpleDateFormat("yyyyMMdd_hhmmss").format(Date())
         val imageName = "JPG_"+timestamp+"_"
