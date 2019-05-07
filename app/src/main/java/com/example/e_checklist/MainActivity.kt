@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             dispatchCameraIntent()
         }
         btn_gabarito.setOnClickListener{
-            val pdf_url = "http://oab.fgv.br/GABARITOS_RETIFICADOS_XXVIII_EXAME_DE_ORDEM.pdf"
+            val pdf_url = "https://firebasestorage.googleapis.com/v0/b/e-checklis.appspot.com/o/gabarito_padrao.png?alt=media&token=f3093479-3cfa-4626-8c3c-365b380bfe81"
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(pdf_url))
             startActivity(browserIntent)
         }
