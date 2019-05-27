@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "124131199419",
+    "firebase_url": "https://e-checklis.firebaseio.com",
+    "project_id": "e-checklis",
+    "storage_bucket": "e-checklis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124131199419:android:b49b092bb9024d4e",
+        "android_client_info": {
+          "package_name": "com.example.e_checklist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124131199419-k64fhv2vt4pnjj8rrqa6m6eltnt92vmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjEBTX-izwMwYHtx0p2a1HueFOOCqbrKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124131199419-k64fhv2vt4pnjj8rrqa6m6eltnt92vmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

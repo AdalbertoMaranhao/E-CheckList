@@ -31,8 +31,12 @@
     </LinearLayout>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="410dp"
             android:id="@+id/imageView" tools:ignore="ContentDescription"/>
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="208dp" android:id="@+id/textDetect"/>
 
 
 </LinearLayout>
