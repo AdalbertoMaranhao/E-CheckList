@@ -94,7 +94,15 @@ class MainActivity : AppCompatActivity() {
 
             for (block in firebaseVisionText.textBlocks) {
                 val text = block.text
-                textDetect.setText(text)
+                textDetect.text = text
+                for (line in block.lines) {
+                    val lineT = line.text
+                    textDetect.text = lineT
+                    for (element in line.elements) {
+                        val elementT = element.text
+                        textDetect.text = elementT
+                    }
+                }
             }
 
         }
