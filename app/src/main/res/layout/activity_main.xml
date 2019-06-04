@@ -14,13 +14,27 @@
             android:layout_height="wrap_content"
             >
 
-    <Button
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/professor"
+                android:id="@+id/btn_professor"
+                tools:ignore="ButtonStyle"/>
+        <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/baixar_gabarito"
             android:id="@+id/btn_gabarito"
             tools:ignore="ButtonStyle"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/notas"
+                android:id="@+id/btn_notas"
+                tools:ignore="ButtonStyle"/>
     <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -36,7 +50,7 @@
     <TextView
             android:text=""
             android:layout_width="match_parent"
-            android:layout_height="208dp" android:id="@+id/textDetect"/>
+            android:layout_height="91dp" android:id="@+id/textDetect"/>
 
 
 </LinearLayout>

@@ -3,4 +3,6 @@
     <string name="baixar_gabarito">Baixar Gabarito</string>
     <string name="preencher_gabarito">Preencher Gabarito</string>
     <string name="capturar_gabarito">Capturar Gabarito</string>
+    <string name="professor">professor</string>
+    <string name="notas">notas</string>
 </resources>
