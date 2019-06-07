@@ -8,49 +8,32 @@
               android:padding="16dp">
 
 
+    <TextView
+            android:text="Bem Vindo!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"
+            android:gravity="center"/>
     <LinearLayout
             android:id="@+id/linearLayout1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_weight="0.1">
 
         <Button
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/professor"
-                android:id="@+id/btn_professor"
+                android:text="@string/baixar_gabarito"
+                android:id="@+id/btn_gabarito"
                 tools:ignore="ButtonStyle"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/baixar_gabarito"
-            android:id="@+id/btn_gabarito"
-            tools:ignore="ButtonStyle"/>
         <Button
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/notas"
-                android:id="@+id/btn_notas"
+                android:text="@string/capturar_gabarito"
+                android:id="@+id/btn_capturar"
                 tools:ignore="ButtonStyle"/>
-    <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/capturar_gabarito"
-            android:id="@+id/btn_capturar"
-            tools:ignore="ButtonStyle"/>
     </LinearLayout>
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="410dp"
-            android:id="@+id/imageView" tools:ignore="ContentDescription"/>
-    <TextView
-            android:text=""
-            android:layout_width="match_parent"
-            android:layout_height="91dp" android:id="@+id/textDetect"/>
 
 
 </LinearLayout>

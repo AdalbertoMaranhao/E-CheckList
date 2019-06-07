@@ -1,6 +1,5 @@
 package com.example.e_checklist
 
-
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
@@ -14,29 +13,24 @@ import android.support.v4.content.FileProvider
 import android.widget.Toast
 import com.google.firebase.ml.vision.FirebaseVision
 import com.google.firebase.ml.vision.common.FirebaseVisionImage
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_resultados.*
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
-
+class Resultados : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_resultados)
 
-        btn_capturar.setOnClickListener {
+        resultadoText.text = "Acertos: " + NotaGlobal.toString()
+        notaText.text = "Erros: " + NotaGlobal.toString()
+        errosText.text = "Nota: " + ErrosGlobal.toString()
+
+        btn_voltar.setOnClickListener{
             dispatchCameraIntent()
-
-        }
-
-        btn_gabarito.setOnClickListener{
-            val pdfUrl = "https://firebasestorage.googleapis.com/v0/b/e-checklis.appspot.com/o/gabarito_padrao.png?alt=media&token=f3093479-3cfa-4626-8c3c-365b380bfe81"
-            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(pdfUrl))
-            startActivity(browserIntent)
-
         }
     }
 
@@ -83,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun createImage(): File{
+    fun createImage(): File {
         val timestamp = SimpleDateFormat("yyyyMMdd_hhmmss").format(Date())
         val imageName = "JPG_"+timestamp+"_"
         val storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
@@ -102,14 +96,13 @@ class MainActivity : AppCompatActivity() {
 
             for (block in firebaseVisionText.textBlocks) {
                 for (line in block.lines) {
-                   for (element in line.elements) {
-                     val elementT = element.text
-                       text += elementT
+                    for (element in line.elements) {
+                        val elementT = element.text
+                        text += elementT
                     }
                 }
             }
 
         }
     }
-
 }
