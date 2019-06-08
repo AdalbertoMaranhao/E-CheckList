@@ -41,7 +41,7 @@ class ConfirmacaoProfessor : AppCompatActivity() {
                 if (img != null) {
                     detectText(img)
                 } else {
-                    Toast.makeText(this, "imagem não capturada", Toast.LENGTH_SHORT)
+                    Toast.makeText(this, "imagem não capturada", Toast.LENGTH_SHORT).show()
                 }
 
                 val gabarito = Intent(this, GabaritoActivity::class.java)
@@ -64,7 +64,7 @@ class ConfirmacaoProfessor : AppCompatActivity() {
             }
             if (photoFile != null) {
 
-                var photoUri = FileProvider.getUriForFile(
+                val photoUri = FileProvider.getUriForFile(
                     this,
                     "com.example.e_checklist.fileprovider", photoFile
                 )
