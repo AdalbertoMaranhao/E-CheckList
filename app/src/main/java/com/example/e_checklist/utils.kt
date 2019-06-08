@@ -10,11 +10,9 @@ var imgGlobal: Bitmap? = null
 var text = ""
 
 
-
 var currentPath: String? = null
 val TAKE_PICTURE = 1
 var img: Bitmap? = BitmapFactory.decodeFile(currentPath)
-
 
 
 var textR = ""

@@ -3,7 +3,6 @@ package com.example.e_checklist
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -25,50 +24,52 @@ class Resultados : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultados)
 
-        resultadoText.text = "Acertos: " + NotaGlobal.toString()
-        notaText.text = "Erros: " + NotaGlobal.toString()
-        errosText.text = "Nota: " + ErrosGlobal.toString()
+        resultadoText.text = "Acertos: $NotaGlobal"
+        notaText.text = "Erros: $NotaGlobal"
+        errosText.text = "Nota: $ErrosGlobal"
 
-        btn_voltar.setOnClickListener{
+        btn_professor.setOnClickListener {
             dispatchCameraIntent()
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == TAKE_PICTURE && resultCode == Activity.RESULT_OK){
+        if (requestCode == TAKE_PICTURE && resultCode == Activity.RESULT_OK) {
             try {
                 val file = File(currentPath)
                 val uri = Uri.fromFile(file)
                 img = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
                 imgGlobal = img
-                if(img != null){
+                if (img != null) {
                     detectText(img)
-                }else{
+                } else {
                     Toast.makeText(this, "imagem não capturada", Toast.LENGTH_SHORT)
                 }
 
-                val gabarito = Intent (this, GabaritoActivity::class.java)
+                val gabarito = Intent(this, GabaritoActivity::class.java)
                 startActivity(gabarito)
 
-            }catch (e: IOException){
+            } catch (e: IOException) {
                 e.printStackTrace()
             }
         }
     }
 
-    fun dispatchCameraIntent(){
+    fun dispatchCameraIntent() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        if(intent.resolveActivity(packageManager) != null){
+        if (intent.resolveActivity(packageManager) != null) {
             var photoFile: File? = null
             try {
                 photoFile = createImage()
-            }catch (e: IOException){
+            } catch (e: IOException) {
                 e.printStackTrace()
             }
-            if (photoFile != null){
+            if (photoFile != null) {
 
-                var photoUri = FileProvider.getUriForFile(this,
-                    "com.example.e_checklist.fileprovider", photoFile)
+                var photoUri = FileProvider.getUriForFile(
+                    this,
+                    "com.example.e_checklist.fileprovider", photoFile
+                )
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
 
                 startActivityForResult(intent, TAKE_PICTURE)
@@ -79,7 +80,7 @@ class Resultados : AppCompatActivity() {
 
     fun createImage(): File {
         val timestamp = SimpleDateFormat("yyyyMMdd_hhmmss").format(Date())
-        val imageName = "JPG_"+timestamp+"_"
+        val imageName = "JPG_" + timestamp + "_"
         val storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         val image = File.createTempFile(imageName, ".jpg", storageDir)
         currentPath = image.absolutePath

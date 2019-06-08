@@ -5,4 +5,14 @@
     <string name="capturar_gabarito">Capturar Gabarito</string>
     <string name="professor">professor</string>
     <string name="notas">notas</string>
+    <string name="bem_vindo">Bem Vindo!</string>
+    <string name="acertos">Acertos:</string>
+    <string name="erros">Erros:</string>
+    <string name="nota">Nota:</string>
+    <string name="capturar_novo_gabarito">Capturar Novo Gabarito</string>
+    <string name="gabarito_cadastrado_com_sucesso">Gabarito cadastrado com sucesso!</string>
+    <string name="capturar_gabarito_do_aluno">Capturar Gabarito do Aluno</string>
+    <string name="aluno">aluno</string>
+    <string name="esse_gabarito_do">Esse gabarito é do?</string>
+    <string name="gabarito">gabarito</string>
 </resources>
