@@ -5,7 +5,8 @@ import android.graphics.BitmapFactory
 
 
 var NotaGlobal = 0
-var ErrosGlobal = 0
+var ErrosGlobal = ""
+var AcertosGlobal = ""
 var imgGlobal: Bitmap? = null
 var text = ""
 
@@ -27,3 +28,9 @@ var seteP = ""
 var oitoP = ""
 var noveP = ""
 var dezP = ""
+
+val A = "BCDE"
+val B = "ACDE"
+val C = "ABDE"
+val D = "ABCE"
+val E = "ABCD"

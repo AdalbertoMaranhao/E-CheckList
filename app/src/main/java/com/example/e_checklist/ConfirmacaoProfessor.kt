@@ -12,13 +12,16 @@ import android.support.v4.content.FileProvider
 import android.widget.Toast
 import com.google.firebase.ml.vision.FirebaseVision
 import com.google.firebase.ml.vision.common.FirebaseVisionImage
+import kotlinx.android.synthetic.main.activity_confirmacao_professor.*
 import kotlinx.android.synthetic.main.activity_resultados.*
+import kotlinx.android.synthetic.main.activity_resultados.btn_professor
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
 class ConfirmacaoProfessor : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

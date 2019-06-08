@@ -24,9 +24,12 @@ class Resultados : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultados)
 
-        resultadoText.text = "Acertos: $NotaGlobal"
-        notaText.text = "Erros: $NotaGlobal"
-        errosText.text = "Nota: $ErrosGlobal"
+        resultadoText.text = "Acertos: $AcertosGlobal"
+        errosText.text = "Erros: $ErrosGlobal"
+        notaText.text = "Nota: $NotaGlobal"
+        AcertosGlobal = ""
+        ErrosGlobal = ""
+        NotaGlobal = 0
 
         btn_professor.setOnClickListener {
             dispatchCameraIntent()

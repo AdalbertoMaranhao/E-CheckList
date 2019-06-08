@@ -27,16 +27,11 @@ class GabaritoActivity : AppCompatActivity() {
 
         btn_aluno.setOnClickListener {
             nota()
+            text = ""
         }
     }
 
     fun preencherQuestionario() {
-        //Declarando as opções
-        val A = "BCDE"
-        val B = "ACDE"
-        val C = "ABDE"
-        val D = "ABCE"
-        val E = "ABCD"
 
         //verificando as opções e armazenando em cada questão
         umP = when {
@@ -120,7 +115,6 @@ class GabaritoActivity : AppCompatActivity() {
             else -> "Erro"
         }
 
-
         val P = Intent(this, ConfirmacaoProfessor::class.java)
         startActivity(P)
 
@@ -128,14 +122,6 @@ class GabaritoActivity : AppCompatActivity() {
     }
 
     fun nota() {
-        //Declarando as opções
-        val A = "BCDE"
-        val B = "ACDE"
-        val C = "ABDE"
-        val D = "ABCE"
-        val E = "ABCD"
-
-
         //Verificando as opções e armazenando em cada questão
         val um = when {
             text.contains("1$A") -> "a"
@@ -143,7 +129,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("1$C") -> "c"
             text.contains("1$D") -> "d"
             text.contains("1$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val dois = when {
             text.contains("2$A") -> "a"
@@ -151,7 +137,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("2$C") -> "c"
             text.contains("2$D") -> "d"
             text.contains("2$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val tres = when {
             text.contains("3$A") -> "a"
@@ -159,7 +145,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("3$C") -> "c"
             text.contains("3$D") -> "d"
             text.contains("3$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val quatro = when {
             text.contains("4$A") -> "a"
@@ -167,7 +153,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("4$C") -> "c"
             text.contains("4$D") -> "d"
             text.contains("4$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val cinco = when {
             text.contains("5$A") -> "a"
@@ -175,7 +161,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("5$C") -> "c"
             text.contains("5$D") -> "d"
             text.contains("5$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val seis = when {
             text.contains("6$A") -> "a"
@@ -183,7 +169,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("6$C") -> "c"
             text.contains("6$D") -> "d"
             text.contains("6$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val sete = when {
             text.contains("7$A") -> "a"
@@ -191,7 +177,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("7$C") -> "c"
             text.contains("7$D") -> "d"
             text.contains("7$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val oito = when {
             text.contains("8$A") -> "a"
@@ -199,7 +185,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("8$C") -> "c"
             text.contains("8$D") -> "d"
             text.contains("8$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val nove = when {
             text.contains("9$A") -> "a"
@@ -207,7 +193,7 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("9$C") -> "c"
             text.contains("9$D") -> "d"
             text.contains("9$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
         val dez = when {
             text.contains("10$A") -> "a"
@@ -215,61 +201,82 @@ class GabaritoActivity : AppCompatActivity() {
             text.contains("10$C") -> "c"
             text.contains("10$D") -> "d"
             text.contains("10$E") -> "e"
-            else -> "Erro"
+            else -> "ErroA"
         }
 
         var nota = 0
-        var erros = 10
+        var erros = ""
+        var acertos = ""
 
         //Comparando com o gabarito padrão para dar a nota final
         if (um == umP) {
             nota += 1
-            erros -= 1
+            acertos+="1, "
+        }else{
+            erros += "1, "
         }
         if (dois == doisP) {
             nota += 1
-            erros -= 1
+            acertos+="2, "
+        }else{
+            erros += "2, "
         }
         if (tres == tresP) {
             nota += 1
-            erros -= 1
+            acertos+="3, "
+        }else{
+            erros += "3, "
         }
         if (quatro == quatroP) {
             nota += 1
-            erros -= 1
+            acertos+="4, "
+        }else{
+            erros += "4, "
         }
         if (cinco == cincoP) {
             nota += 1
-            erros -= 1
+            acertos+="5, "
+        }else{
+            erros += "5, "
         }
         if (seis == seisP) {
             nota += 1
-            erros -= 1
+            acertos+="6, "
+        }else{
+            erros += "6, "
         }
         if (sete == seteP) {
             nota += 1
-            erros -= 1
+            acertos+="7, "
+        }else{
+            erros += "7, "
         }
         if (oito == oitoP) {
             nota += 1
-            erros -= 1
+            acertos+="8, "
+        }else{
+            erros += "8, "
         }
         if (nove == noveP) {
             nota += 1
-            erros -= 1
+            acertos+="9, "
+        }else{
+            erros += "9, "
         }
         if (dez == dezP) {
             nota += 1
-            erros -= 1
+            acertos+="10"
+        }else{
+            erros += "10"
         }
 
         NotaGlobal = nota
         ErrosGlobal = erros
+        AcertosGlobal = acertos
+
 
         //exibindo a nota e linpamdo o texto capturado
         val R = Intent(this, Resultados::class.java)
         startActivity(R)
-
-        text = ""
     }
 }

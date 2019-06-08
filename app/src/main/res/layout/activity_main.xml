@@ -36,7 +36,7 @@
             android:layout_marginBottom="16dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline"
             android:layout_marginStart="16dp" style="@android:style/Widget.Material.Button.Colored"
-            tools:targetApi="m" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline5"/>
+            tools:targetApi="m" android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="@+id/guideline5"/>
     <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
                                           android:id="@+id/guideline"
                                           android:orientation="vertical"

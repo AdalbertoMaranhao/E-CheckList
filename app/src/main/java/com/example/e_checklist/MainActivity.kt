@@ -102,14 +102,12 @@ class MainActivity : AppCompatActivity() {
 
             for (block in firebaseVisionText.textBlocks) {
                 for (line in block.lines) {
+                    text += line.text + "\n"
                     for (element in line.elements) {
-                        val elementT = element.text
-                        text += elementT
+                        //text += element.text
                     }
                 }
             }
-
         }
     }
-
 }
