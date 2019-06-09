@@ -19,6 +19,7 @@ class GabaritoActivity : AppCompatActivity() {
 
         btn_professor.setOnClickListener {
             textR = text
+            println(text)
             preencherQuestionario()
             text = ""
             textR = ""
